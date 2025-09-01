@@ -69,7 +69,7 @@ app.get('/jokes', (req,res) =>
       if(err){
         return res.status(500).send({message:"error fetching jokes", error : err});
       }
-      res.json(results);
+      res.json(results)
     });
 });
 const port = process.env.PORT || 3000;
